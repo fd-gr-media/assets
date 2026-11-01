@@ -1,0 +1,23 @@
+name: Bilder holen
+on:
+  push:
+    paths: ['fetch/urls.txt']
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download
+        run: |
+          mkdir -p img/src
+          while read -r name url; do
+            [ -z "$name" ] && continue
+            curl -sSL --fail -o "img/src/$name" "$url" || echo "FEHLER $name"
+          done < fetch/urls.txt
+      - name: Commit
+        run: |
+          git config user.name "FD Media"; git config user.email "noreply@fd-gr-media.invalid"
+          git add img/src && git commit -m "Bilder geholt" || echo nichts
+          git push
