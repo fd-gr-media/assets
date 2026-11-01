@@ -3,3 +3,5 @@ pexels-8628340.jpg https://images.pexels.com/photos/8628340/pexels-photo-8628340
 pexels-4427225.jpg https://images.pexels.com/photos/4427225/pexels-photo-4427225.jpeg?auto=compress&cs=tinysrgb&w=1600
 pexels-10478019.jpg https://images.pexels.com/photos/10478019/pexels-photo-10478019.jpeg?auto=compress&cs=tinysrgb&w=1600
 SpaceGrotesk.ttf https://raw.githubusercontent.com/google/fonts/main/ofl/spacegrotesk/SpaceGrotesk%5Bwght%5D.ttf
+pexels-4508751.jpg https://images.pexels.com/photos/4508751/pexels-photo-4508751.jpeg?auto=compress&cs=tinysrgb&w=1600
+pexels-2588757.jpg https://images.pexels.com/photos/2588757/pexels-photo-2588757.jpeg?auto=compress&cs=tinysrgb&w=1600
