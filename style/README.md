@@ -6,3 +6,8 @@
   FD-Stencil im Logo-Stil unten rechts (gedämpft, Lime-Balken).
 - In HTML: `background:#0F1115 url('…/style/fd-wall-dark-v1.png') center/cover`
 - Generator-Skripte: `gen_wall_*.py` (gen_wall_dark_v1.py erzeugt die Datei).
+
+- `fd-lime-wheatpaste-v1.png` (1080×630): Hintergrund für Lime-Flächen (statt #C6F432),
+  z. B. unterer Teil des punkte-foto-Covers. Lime-Plakat aufgekleistert: Papierstruktur,
+  Knicke, Kleisterblasen, ohne abgerissene Ecken; FD-Stencil im Logo-Stil sehr schwach.
+  In HTML: `background:#C6F432 url('…/style/fd-lime-wheatpaste-v1.png') center/cover`
