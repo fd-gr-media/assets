@@ -20,3 +20,8 @@
   1. `background:url(…overlay) ; mix-blend-mode:soft-light`
   2. `background:url(…overlay) ; mix-blend-mode:multiply; opacity:.18`
   (`fd-lime-wheatpaste-v1.png` ist damit für das Cover nicht mehr nötig.)
+
+## Freigegeben für blaue Folien (zahl/text), Stand 06.11.2026
+- `fd-blue-fd-stencil-v1.png` (1080×1350): Blau #2346F5 mit sehr schwachem FD im Logo-Stil (dunkel, Lime-Balken) unten rechts.
+  `background:#2346F5 url('…/style/fd-blue-fd-stencil-v1.png') center/cover`
+- Darüber dasselbe Plakat-Overlay wie beim Cover (`fd-wheatpaste-overlay-v1.png`, soft-light + multiply .18).
