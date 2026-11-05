@@ -11,3 +11,12 @@
   z. B. unterer Teil des punkte-foto-Covers. Lime-Plakat aufgekleistert: Papierstruktur,
   Knicke, Kleisterblasen, ohne abgerissene Ecken; FD-Stencil im Logo-Stil sehr schwach.
   In HTML: `background:#C6F432 url('…/style/fd-lime-wheatpaste-v1.png') center/cover`
+
+## Freigegeben für Lime-Cover (punkte-foto), Stand 06.11.2026
+- `fd-lime-fd-stencil-v1.png` (1080×630): Lime-Fläche mit sehr schwachem FD im Logo-Stil.
+  `background:#C6F432 url('…/style/fd-lime-fd-stencil-v1.png') center/cover`
+- `fd-wheatpaste-overlay-v1.png` (1080×1350): Plakat-Overlay über das GANZE Cover (Foto + Lime):
+  zwei Ebenen ganz oben im Cover:
+  1. `background:url(…overlay) ; mix-blend-mode:soft-light`
+  2. `background:url(…overlay) ; mix-blend-mode:multiply; opacity:.18`
+  (`fd-lime-wheatpaste-v1.png` ist damit für das Cover nicht mehr nötig.)
