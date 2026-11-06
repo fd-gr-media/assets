@@ -1,0 +1,32 @@
+name: Transkribieren
+on:
+  push:
+    paths: ['transcribe/*.mp3']
+permissions:
+  contents: write
+jobs:
+  tr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -q faster-whisper
+      - name: Transcribe
+        run: |
+          python - <<'PY'
+          import glob,json,os
+          from faster_whisper import WhisperModel
+          m=WhisperModel('large-v3',device='cpu',compute_type='int8')
+          os.makedirs('transcribe/out',exist_ok=True)
+          for f in glob.glob('transcribe/*.mp3'):
+              segs,_=m.transcribe(f,language='el',word_timestamps=True,vad_filter=False,beam_size=5)
+              out=[{'start':s.start,'end':s.end,'text':s.text,'words':[{'w':w.word,'s':w.start,'e':w.end} for w in s.words]} for s in segs]
+              json.dump(out,open('transcribe/out/'+os.path.basename(f)+'.json','w'),ensure_ascii=False,indent=1)
+              os.remove(f)
+          PY
+      - name: Commit
+        run: |
+          git config user.name "FD Media"; git config user.email "noreply@fd-gr-media.invalid"
+          git add -A transcribe && git commit -m "Transkript" || echo nichts
+          git push
