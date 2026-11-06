@@ -26,3 +26,4 @@ pexels-15261012.jpg https://images.pexels.com/photos/15261012/pexels-photo-15261
 pexels-11077604.jpg https://images.pexels.com/photos/11077604/pexels-photo-11077604.jpeg?auto=compress&cs=tinysrgb&w=1600
 test-hcti-pf.png https://hcti.io/v1/image/01a1af85-5b9e-777d-9be1-14e6a13d5cb8.png
 test-aade-cover.png https://hcti.io/v1/image/01a1afc4-8126-7e5d-928f-4b5d5b26faa6.png
+test-frage-cover.png https://hcti.io/v1/image/01a1b04f-6626-7e42-8ce7-b3e68c577a2a.png
